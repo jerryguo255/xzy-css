@@ -1,14 +1,7 @@
-.main {
-  width:620px;
-  height:620px;
-}
-
-
 .main * {
-  margin: 7px 7px;
-  height:30%;
-  width: 30%;
+  margin: 1%; /*margin 必须为百分比，*/
+  padding: 15.6%;
   background-color: orange;
   float: left;
-  border-radius: 5px;
+  border-radius:10%; /*设百分比能保持缩放一致*/
 }
