@@ -1,0 +1,63 @@
+body {
+  background-color: #68cdd5;
+  /* body 内元素居中 */
+}
+
+.container {
+  text-align: center;
+}
+
+.bar {
+  position: absolute;
+  /* absolute 定位使元素的位置与文档流无关，因此不占据空间。 */
+}
+
+.bar img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo {
+  position: relative;
+  top: 145px;
+  /* 顶到下面去 */
+  left: -10px;
+  /* 切图的缘故，左边多了点，所以偏移10像素 */
+}
+
+.logo img {
+  width: 140px;
+  height: 60px;
+}
+
+.players-area,.description {
+  margin: 0px 15%;
+  /* 同一种属性作用于2个选择器 */
+}
+
+.description {
+  margin-top: 280px;
+  margin-bottom: 170px;
+  min-width: 50px;
+  font-size: 14px;
+}
+
+.players-area img {
+  width: 60px;
+  height: 60px;
+}
+
+.players-area .player {
+  float: left;
+}
+
+.players-area .player:last-child {
+  float: right;
+}
+
+.players-area .player, .description {
+  color: white;
+}
+
+/* logo 用position relative 推下去
+description 用巨大margin */
