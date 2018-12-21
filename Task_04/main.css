@@ -1,0 +1,37 @@
+a, .top-bar .title {
+  text-decoration: none;
+  color: white;
+}
+
+.top-bar {
+  background-color: #5ac0ce;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.top-bar>:first-child {
+  float: left;
+}
+
+.top-bar>:last-child {
+  float: right;
+}
+
+.top-bar .title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.input-area {
+  display: -webkit-flex;
+  display: flex;
+  align-content: flex-start/flex-end/center/space-between/space-around/stretch;
+
+   background-color: grey;
+  height: 222px;
+}
+.input-area input {
+  align-self: auto/flex-start/flex-end/center/baseline/stretch;
+}
