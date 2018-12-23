@@ -53,9 +53,9 @@ a, .top-bar .title {
   display: flex;
   align-items: center;
   float: left;
-  width: 16.5%;
+  width: 70px;
   max-width: 90px;
-  padding-left: 1.5%;
+  padding-left: 10px;
 }
 
 .input-area .icons img {
@@ -69,13 +69,12 @@ a, .top-bar .title {
 
 .input-area input {
   font-size: 18px;
-  min-width: 44px;
+  width: 40%;
   line-height: 19px;
   float: left;
   border-width: 0;
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
-  width: 80%;
   margin: 0 0;
   height: 100%;
   border-style: none;
@@ -93,6 +92,11 @@ a, .top-bar .title {
   background-color: #5ac0ce;
   height: 40px;
   font-size: 18px;
+  font-weight: bold;
   text-align: center;
   line-height: 40px;
+}
+
+.button:hover{
+  background-color: #50bac4;
 }
