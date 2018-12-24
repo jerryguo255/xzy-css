@@ -1,12 +1,11 @@
-@media (max-width: 450px) {
+@media (max-width: 677px) {
   body {
-    height: 100%;
     margin: 0px;
     padding: 0px;
-
+    Font-size: 62.5%;
   }
 
-  .container, body {
+  .container,body {
     background-color: #666;
   }
 
@@ -16,63 +15,81 @@
     color: #fff;
   }
 
-  .container .task {}
-
-  .container .task,
-  .container .task * {
-    background-color: #666;
-    font-size: 18px;
-    color: #000;
-    background-color: #fff;
+  h1:hover {
+    text-align: center;
+    font-family: sans-serif;
+    color: #ccc;
   }
 
+
   .container {
-    height: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
+    /* 水平 */
+
+
   }
 
   .container .task {
-    display: flex;
+    font-size: 1.3em;
+    color: #000;
+    background-color: #fff;
     margin-top: 18px;
     border-radius: 5px;
-    width: 80%;
-    max-height: 65px;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
   }
+
+
+
+  .container a{
+   color: #000;
+  }
+  .container a:hover{
+   color: #888;
+  }
+
 
   .container .task .github-logo {
-    background-image: url("../img/GitHub-Mark-ss.png");
-    background-repeat:no-repeat;
-    height: 12px;
-    width: 12px;
+    background-image: url("../img/GitHub-Mark-s-click.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
     margin: 3px 0;
-    margin-left: 2%;
-    margin-top: 6%;
+    margin-left: 5%;
   }
 
+  .container .task .github-logo:hover {
+    background-image: url("../img/GitHub-Mark-s.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    margin: 3px 0;
+    margin-left: 5%;
+  }
 
   .container .task * {
-    font-size: 0.58em;
+    font-size: 1em;
     vertical-align: middle;
     margin-left: 3%;
-    margin-top: 8px;
-    padding:10px;
+    margin-top: 3px;
+    padding: 10px;
   }
-　　}
-
-
-
-
-@media (min-width: 450px) {
-body {
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
 
 }
 
-.container, body {
+@media (min-width: 677px) {
+
+body {
+  margin: 0px;
+  padding: 0px;
+  Font-size: 62.5%;
+}
+
+.container ,body {
   background-color: #666;
 }
 
@@ -80,36 +97,69 @@ h1 {
   text-align: center;
   font-family: sans-serif;
   color: #fff;
+  font-size: 26px;
 }
 
-.container .task {}
-
-.container .task,
-.container .task * {
-  background-color: #666;
-  font-size: 18px;
-  color: #000;
-  background-color: #fff;
+h1:hover {
+  text-align: center;
+  font-family: sans-serif;
+  color: #ccc;
 }
+
 
 .container {
-  height: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
+  /* 水平 */
+
+
 }
 
 .container .task {
-  display: flex;
+  font-size: 1.8em;
+  color: #000;
+  background-color: #fff;
   margin-top: 18px;
   border-radius: 5px;
-  width: 80%;
-  max-height: 65px;
+  width: 51%;
+
+  display: flex;
+  align-items: center;
+}
+.container .task-underway {
+  font-size: 1.8em;
+  color: #666;
+  background-color: #88f1c9;
+
+  border-radius: 5px;
+  width: 51%;
+
+  display: flex;
+  align-items: center;
 }
 
+
+.container a{
+ color: #000;
+}
+.container a:hover{
+ color: #888;
+}
+
+
 .container .task .github-logo {
+  background-image: url("../img/GitHub-Mark-s-click.png");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin: 3px 0;
+  margin-left: 5%;
+}
+
+.container .task .github-logo:hover {
   background-image: url("../img/GitHub-Mark-s.png");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   height: 30px;
   width: 30px;
   margin: 3px 0;
@@ -118,9 +168,8 @@ h1 {
 
 .container .task * {
   font-size: 1em;
-  vertical-align: middle;
   margin-left: 3%;
   margin-top: 3px;
-  padding:10px;
+  padding: 10px;
 }
-  }
+}
