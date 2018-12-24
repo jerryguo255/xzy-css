@@ -43,7 +43,16 @@
     align-items: center;
   }
 
-
+  .container .task-underway {
+    font-size: 1.3em;
+    color: #666;
+    background-color: #88f1c9;
+    border-radius: 5px;
+    width: 90%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+  }
 
   .container a{
    color: #000;
