@@ -1,0 +1,176 @@
+body, header {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  /* 顶部栏 */
+  display: flex;
+  /* flex 弹性布局 */
+  align-items: center;
+  /* flex 垂直居中 */
+  justify-content: center;
+  /* flex 水平居中 */
+  position: fixed;
+  /* 位置固定（同时市区高度） */
+  width: 100%;
+  height: 55px;
+  background-color: #5ac0ce;
+  color: white;
+  font-weight: bold;
+}
+
+.header a {
+  /* 返回图标 */
+  position: absolute;
+  /* 不受flex 约束 */
+  left: 20px;
+  /* 调整边距间隔 */
+  top: 15px;
+}
+
+.header img {
+  /* 返回图标图片 */
+  width: 24px;
+  /* 调整大小 */
+  height: 30px;
+}
+/* 顶部栏 */
+
+/* 主区域 */
+.mainpage {
+  padding-top: 55px;
+  padding-bottom: 70px;
+}
+
+.personal-info .background-area {
+  background-image: url('img/bg3.png');
+  background-size: cover;
+  /*背景图片覆盖*/
+  height: 180px;
+  display: flex;
+  align-items: center;
+  /* flex 垂直居中 */
+}
+
+.info-area {
+  display: flex;
+  align-items: center;
+  /* flex 垂直居中 */
+  width: 300px;
+  color: white;
+  margin-left: 25px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.info-area>img {
+  height: 85px;
+}
+
+.info-area .info {
+  margin-left: 25px;
+
+}
+.info-area .info .address img {
+  position:relative;
+  top:4px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+
+.pro-skill-bar{
+  height: 58px;
+  border-bottom:1px solid rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  /* flex 垂直居中 */
+}
+
+.pro-skill-bar img{
+  position:relative;
+  top:1px;
+  height:20px;
+  width:15px;
+}
+.pro-skill-bar *{
+  padding-left: 12px;
+}
+.pro-skill-bar ,
+.pro-skill-bar *,
+.mainpage .details *
+{
+  font-size: 13px;
+}
+
+.mainpage .details >*{
+  margin:0px 7px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  line-height: 25px;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  /* flex 垂直居中 */
+}
+
+.mainpage .details * .title{
+  position:relative;
+  color: rgba(0,0,0,0.45);
+  height:32px;
+  min-width: 75px;
+  display: flex;
+  align-items: center;
+  /* flex 垂直居中 */
+  border-right: 1px solid rgba(0,0,0,0.25);
+}
+.mainpage .details * .content{
+  margin-left: 12px;
+}
+
+.mainpage .details .price {
+  color:red;
+}
+
+.mainpage .details .skill-points img{
+  position:relative;
+  top:-1px;
+  height: 30px;
+}
+/* 主区域 */
+
+/* 底部栏 */
+.footer {
+  display: flex;
+  /* flex 弹性布局 */
+  align-items: center;
+  /* flex 垂直居中 */
+  justify-content: space-evenly;
+  /* flex 水平均匀分布 */
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  position: fixed;
+  bottom: 0px;
+}
+
+.footer input:first-child {
+  background-color: white;
+  border: #5ac0ce;
+  border: 2px solid #5ac0ce;
+  color: #5ac0ce;
+  font-size: 17px;
+}
+
+.footer input {
+  /*input默认上下padding 1px;左右6px;*/
+  padding: 0;
+  width: 46.8%;
+  height: 70%;
+  border-radius: 5px;
+  border: 0;
+  background-color: #5ac0ce;
+  color: white;
+  font-size: 17px;
+}
+/* 底部栏 */
