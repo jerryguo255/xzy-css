@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul li ul li {
+  float: none;
+  background-color: red;
+  margin: 2px 0px;
+}
+
+ul li ul {
+  display: none;
+}
+
+.header {
+  /* 顶部栏 */
+  height: 55px;
+  width: 100%;
+  background-color: #5ec0ce;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .item {
+  margin-left: 20px;
+  height: 25px;
+  width: 25px;
+}
+
+.header .location {
+  margin-right: 20px;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/icon_sprite3.png);
+  background-repeat: no-repeat;
+  background-position: -56px -5px;
+}
+
+.header .tag-area {
+  /* 顶部栏按钮组 */
+  display: flex;
+}
+
+.header .tag-area .tag-btn {
+  border-radius: 8px;
+  height: 41px;
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+
+.header .tag-area .tag-btn:first-child {
+  background-color: #53a8b2;
+  position: relative;
+  left: 6px;
+}
+
+.header .tag-area .tag-btn:first-child * {
+  color: white;
+}
+
+.header .tag-area .tag-btn:last-child {
+  background-color: white;
+  position: relative;
+  right: 6px;
+}
+
+.header .tag-area .tag-btn:last-child * {
+  color: #5ec0ce;
+}
+
+.header .tag-area a {
+  line-height: 33px;
+}
+
+.drop-down-menu {
+  /* 下拉菜单 */
+  background-color: #f9f9f9;
+  margin-top: 55px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header,
+.drop-down-menu,
+.footer {
+  position: fixed;
+}
+
+.drop-down-menu li:not(:last-child) {
+  /* 渐变 */
+  border-right: 1px solid silver;
+  border-image: linear-gradient(white, silver, white)1;
+}
+
+.drop-down-menu a {
+  color: #b5b5b5;
+}
+
+.drop-down-menu>* {
+  height: 100%;
+  width: 33.3333%;
+  text-align: center;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.triangle-down {
+  /* 倒三角 */
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #b5b5b5;
+}
+
+/* 顶部栏 */
+/* 主区域 */
+.main-body {
+  padding-top: 110px;
+  padding-bottom: 65px;
+  background-color: #f9f9f9;
+}
+
+.main-body .list {
+  /* 列表 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.list .left-side .date-top,
+.list .left-side .location {
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.list .left-side .date-top .date-icon,
+.list .left-side .location .location-icon {
+  height: 16px;
+  width: 16px;
+  background-image: url(../img/icon_sprite3.png);
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.list .left-side .date-top .date-icon {
+  background-position: 0px -51px;
+}
+
+.list .left-side .location .location-icon {
+  background-position: -17px -50px;
+}
+
+
+
+.list .left-side .date-content {
+  display:block;
+  margin: 6px 21px ;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+   -o-text-overflow:ellipsis;
+   overflow:hidden;
+}
+
+.list .right-side .price{
+  display:block;
+ color:#d26c54;
+ text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+ .list .right-side .access-icon{
+   /*大于号标志 */
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top:7px;
+  left:15px;
+  border-left: 2px solid #5ec0ce;
+  border-bottom: 2px solid #5ec0ce;
+  -webkit-transform: translate(0,-50%) rotate(-135deg);
+  transform: translate(0,-50%) rotate(-135deg);
+}
+
+
+.list .right-side{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width:92px;
+
+
+}
+/* 主区域 */
+/* 底部栏 */
+.footer {
+  height: 65px;
+  width: 100%;
+  bottom: 0px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer>* {
+  height: 40px;
+  display: flex;
+}
+
+.footer .write-now-icon {
+  width: 46px;
+  height: 46px;
+  background-image: url(../img/icon_sprite3.png);
+  background-repeat: no-repeat;
+  background-position: 0px -1px;
+}
+
+.footer .home,
+.footer .my-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.footer .title {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.footer .home .title {
+  font-size: 12px;
+  color: #5ec0ce;
+}
+
+.footer .home .home-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/icon_sprite3.png);
+  background-repeat: no-repeat;
+  background-position: -34px -53px;
+}
+
+.footer .my-icon .icon {
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/icon_sprite3.png);
+  background-repeat: no-repeat;
+  background-position: -58px -53px;
+}
