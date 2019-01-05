@@ -1,8 +1,12 @@
 @media (max-width: 677px) {
+  a{
+    text-decoration: none;
+  }
   body {
     margin: 0px;
     padding: 0px;
     Font-size: 62.5%;
+    min-width: 320px;
   }
 
   .container,body {
@@ -38,9 +42,11 @@
     margin-top: 18px;
     border-radius: 5px;
     width: 90%;
-
     display: flex;
     align-items: center;
+  }
+  .container .task:hover{
+    background-color: #dee;
   }
 
   .container .task-underway {
@@ -91,7 +97,9 @@
 }
 
 @media (min-width: 677px) {
-
+  a{
+    text-decoration: none;
+  }
 body {
   margin: 0px;
   padding: 0px;
@@ -132,10 +140,13 @@ h1:hover {
   margin-top: 18px;
   border-radius: 5px;
   width: 51%;
-
   display: flex;
   align-items: center;
 }
+.container .task:hover{
+  background-color: #dee;
+}
+
 .container .task-underway {
   font-size: 1.8em;
   color: #666;
