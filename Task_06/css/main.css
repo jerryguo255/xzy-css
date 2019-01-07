@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover{
+  text-decoration: none;
+}
 
 ul, li {
   list-style: none;
@@ -126,6 +129,10 @@ ul li ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.dropdown-menu{
+  width: 32%;
 }
 
 .triangle-down {

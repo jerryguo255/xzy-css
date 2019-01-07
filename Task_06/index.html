@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/main.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
 </head>
 
@@ -24,14 +24,17 @@
     <div class="location"></div>
   </div>
 
-  <ul class="drop-down-menu drop">
-    <li>
+  <!-- 下拉框 -->
+  
+ 
+  <ul class="drop-down-menu">
+    <li id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
       <div class="item"></div>
-      <a href="#">所在地</a>
+      <a  href="#">所在地</a>
       <div class="triangle-down"></div>
-      <ul>
-        <li><a href="#">国际</a></li>
-        <li><a href="#">内地</a></li>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li class="dropdown-item"><a href="#">国际</a></li>
+        <li class="dropdown-item"><a href="#">内地</a></li>
       </ul>
     </li>
 
