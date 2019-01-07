@@ -15,20 +15,6 @@ a:hover{
   text-decoration: none;
 }
 
-ul, li {
-  list-style: none;
-}
-
-ul li ul li {
-  float: none;
-  background-color: red;
-  margin: 2px 0px;
-}
-
-ul li ul {
-  display: none;
-}
-
 .header {
   /* 顶部栏 */
   height: 55px;
@@ -111,8 +97,8 @@ ul li ul {
   position: fixed;
 }
 
-.drop-down-menu li:not(:last-child) {
-  /* 渐变 */
+/* 给下拉菜单加右边距(渐变)  除最后一个元素 */
+.drop-down-menu .dropdown:not(:last-child) {  
   border-right: 1px solid silver;
   border-image: linear-gradient(white, silver, white)1;
 }
@@ -121,18 +107,27 @@ ul li ul {
   color: #b5b5b5;
 }
 
-.drop-down-menu>* {
-  height: 100%;
-  width: 33.3333%;
-  text-align: center;
-  padding: 0 6px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+
+/* 重写dropdown */
+.dropdown {  
+   height: 100%; 
+  width: 33.3333%;   
 }
 
 .dropdown-menu{
-  width: 32%;
+  width: 100%;   
+}
+
+.dropdown-menu .dropdown-item{
+  text-align: center;
+}
+
+.dropdown-title{
+  height: 100%; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .triangle-down {
