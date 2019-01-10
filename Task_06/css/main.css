@@ -154,7 +154,7 @@ a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 10px 11px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -179,7 +179,7 @@ a:hover{
   background-position: 0px -51px;
 }
 
-.list .left-side .location .location-icon {
+.list .left-side .location .location-icon { 
   background-position: -17px -50px;
 }
 
@@ -193,36 +193,32 @@ a:hover{
    -o-text-overflow:ellipsis;
    overflow:hidden;
 }
-
+.list .right-side{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  
+}
 .list .right-side .price{
   display:block;
  color:#d26c54;
  text-overflow: ellipsis;
    white-space: nowrap;
    overflow: hidden;
+   
 }
+
+
 
  .list .right-side .access-icon{
-   /*大于号标志 */
-  width: 10px;
-  height: 10px;
-  position: relative;
-  top:7px;
-  left:15px;
-  border-left: 2px solid #5ec0ce;
-  border-bottom: 2px solid #5ec0ce;
-  -webkit-transform: translate(0,-50%) rotate(-135deg);
-  transform: translate(0,-50%) rotate(-135deg);
-}
-
-
-.list .right-side{
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  width:92px;
-
-
+   margin-left: 25px;
+   height:15px;
+   width:10px;
+   background-image: url(../img/icon_sprite3.png);
+   background-repeat: no-repeat;
+   margin-right: 5px;
+   background-position: -60px -32px;
 }
 /* 主区域 */
 /* 底部栏 */
