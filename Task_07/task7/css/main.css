@@ -1,0 +1,88 @@
+body{
+    background-color: #eff0f1;
+}
+
+.header{
+    height:50px;
+    background-color: #34bede;
+    display: flex;
+    justify-content:space-between;    
+    align-items: center;
+    padding: 21px;
+}
+
+.header .menu-icon{
+    background-image: url(../img/sprite-s.png);
+    height: 29px;
+    width: 26px;
+    background-position: -152px -3px;    
+}
+
+.last-time-game-box{
+    margin-top: 17px;
+    height:77px;
+    width:100%;
+   background-color: #fff;
+   border:2px solid rgb(230, 228, 228);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+
+
+.last-time-game-box .content{
+    font-family:sans-serif;
+    font-size:22px;
+    color: rgb(167, 164, 164);
+}
+.last-time-game-box .access-icon{
+    margin-bottom: 5px;
+    background-image: url(../img/sprite-s.png);
+    height: 29px;
+    width:22px;
+    background-position: -2px -1px;
+}
+.last-time-game-box .item{
+    width:22px;
+}
+.choose-game-box{
+
+    background-color: #fff;
+    margin-top: 17px;
+}
+.choose-game-box .game-title{    
+    text-align: center;
+    line-height: 55px;
+    font-size: 23px;
+    height:56px;
+    border-bottom: 1px solid #f8c36a;
+    color:#f8c36a;
+    font-weight: 550;
+}
+
+.mode-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:18px 25px;
+}
+.mode-area > *{
+    width:100%;
+}
+.mode-area * > *{
+    width:100%;
+    text-align: center;
+}
+.mode-area .status{
+    margin: 15px 0px;
+    color: rgb(167, 164, 164);    
+}
+
+.mode-area input{
+    height: 66px;
+    color:#fff;
+    background-color: #6dd2e9;
+    border: 0;
+}
